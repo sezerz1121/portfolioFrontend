@@ -25,7 +25,16 @@ function Navbar({ currentPage }) {
   });
 
   const navigation = (page) => () => {
-    navigate(`/${page.toLowerCase()}`);
+
+    if(page==='Contact me')
+    {
+      navigate(`/contact`);
+    }
+    else
+    {
+      navigate(`/${page.toLowerCase()}`);
+    }
+    
   };
 
   return (
