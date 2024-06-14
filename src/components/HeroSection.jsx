@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { useNavigate } from 'react-router-dom';
 
 const introVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -18,6 +18,11 @@ const introVariants = {
   };
 
 const HeroSection = () => {
+  const navigate =useNavigate();
+  const handleContactMe=()=>
+  {
+    navigate("/contact me")
+  }
   return (
     <motion.div 
     className='HomePageIntro'
@@ -44,6 +49,7 @@ const HeroSection = () => {
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
+          onClick={handleContactMe}
         >
           Contact Me
         </motion.button>
