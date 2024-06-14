@@ -277,6 +277,7 @@ body
 .FooterDivIcons
 {
   margin-bottom: 75px;
+  margin-right: 25px;
 }
 .ContactmeDiv
 {
@@ -327,3 +328,78 @@ body
   width: 302px;
   height: 79px;
 }
+.FooterlogoparentDiv
+{
+  display: flex;
+  
+}
+.contactmeDIvParent
+{
+  height: 50%;
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  .ContactmeDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  margin-left: 800px;
+}
+
+.InputField
+{
+
+  width: 500px;
+  height: 50px;
+  font-size: 24px;
+  color: black;
+  font-weight: 600;
+  border-radius: 16px;
+  border: solid 1px #555;
+  margin-bottom: 25px;
+  padding-left: 25px;
+}
+.InputField:focus
+{
+  outline: none;
+}
+.ContactmeSubmitButton {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  color: #00A8CC;
+  font-size: 34px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.ContactmeSubmitButton:hover {
+  background-color: #00A8CC;
+  color: black;
+}
+
+.ContactmeSubmitButton:active {
+  width: 302px;
+  height: 79px;
+}
+.SkilsTitleIII
+{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 175px;
+  margin-left: 800px;
+}
+}
+

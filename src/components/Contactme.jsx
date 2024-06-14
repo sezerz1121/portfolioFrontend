@@ -74,7 +74,7 @@ function Contactme() {
         }
     };
   return (
-    <>  <motion.div ref={ref} variants={container} initial="hidden" animate={mainControl}>
+    <>  <motion.div className='contactmeDIvParent' ref={ref} variants={container} initial="hidden" animate={mainControl}>
         <motion.div variants={item}className='SkilsTitleIII'>Contact Me</motion.div>
         <motion.div className='ContactmeDiv'>
         <motion.div variants={item}><input className='InputField' name='yourName' type='text' onChange={handleChange} placeholder='Your name' value={name}/></motion.div> 
