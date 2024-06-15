@@ -30,41 +30,51 @@ function Socials() {
           opacity: 1
         }
       }
+      const imageVariants = {
+        hover: {
+          scale: 1.25,
+          transition: {
+            type: 'spring',
+            stiffness: 500,
+            damping: 20
+          }
+        },
+        tap: {
+          scale: 1.25,
+          transition: {
+            type: 'spring',
+            stiffness: 500,
+            damping: 20
+          }
+        },
+        initial: {
+          scale: 1,
+          transition: {
+            type: 'spring',
+            stiffness: 500,
+            damping: 20
+          }
+        }
+      };
   return (
     <>
      <motion.div ref={ref} className='FooterDiv'  variants={container} initial="hidden" animate={mainControl}>
         <div className='FooterlogoparentDiv'>
-        <motion.div className="FooterDivIcons" variants={item}
-                    initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+        <motion.div className="FooterDivIcons"   
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
         >
         <a  href="https://github.com/sezerz1121" target="blank"><img align="center" src="/Images/github-mark.svg" alt="https://www.instagram.com/tatsam.dev/" height="30" width="30" /></a>
         </motion.div>
-        <motion.div className="FooterDivIcons" variants={item}
-                    initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+        <motion.div className="FooterDivIcons" 
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
         >
         <a  href="https://www.instagram.com/tatsam.dev/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="https://www.instagram.com/tatsam.dev/" height="30" width="40" /></a>
         </motion.div>
