@@ -403,3 +403,330 @@ body
 }
 }
 
+
+@media only screen and (max-width: 600px) {
+
+  .NavBarParentDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    justify-content: space-around; 
+  }
+  .NavBarPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black; 
+    cursor: pointer;
+    width: 75px;
+  }
+  .HomePageIntro
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    padding: 0%;
+  }
+  
+  .HomePageIntroTextDiv {
+    width: 328px;
+    height: 332px;
+    display: flex;
+    margin-right: 0%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .HomePageIntroImageDiv {
+    margin-top: 42.5px;
+    height: 180px;
+    width: 180px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .HomePageIntroTextTop {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;  /* Darker color for better readability */
+    letter-spacing: 1px;  /* Adding letter spacing for better typography */
+    line-height: 1.2;  /* Improving line height for better readability */
+  }
+  
+  .HomePageIntroTextBottom {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;  /* Softer color for subheading */
+    line-height: 1.4;  /* Improving line height for better readability */
+  }
+  
+  .HomePageIntroTextBottomI {
+    font-size: 16px;  /* Slightly larger font size */
+    font-weight: 400;  /* Slightly lighter font weight */
+    color: #777;  /* Even softer color for descriptive text */
+    line-height: 1.6;  /* Improving line height for better readability */
+  }
+  
+  .highlight {
+    color: #00A8CC;  /* Highlight color for emphasis */
+    font-style: italic;  /* Italicize for emphasis */
+  }
+  
+  .HomePageIntroImageDiv img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;  /* Optional: Add border radius for image */
+    transition: transform 0.3s ease;  /* Smooth transition for hover effect */
+  }
+  
+  .HomePageIntroImageDiv img:hover {
+    transform: scale(1.05);  /* Slightly enlarge image on hover */
+  }
+  
+  .CTAButtonDiv {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Spacing above the button */
+  }
+  
+  .CTAButton {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #00A8CC;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .CTAButton:hover {
+    background-color: #008bb5;
+  }
+  
+  .CTAButton:active {
+    transform: scale(0.95);
+  }
+
+  .imageDiv
+{
+  height: 75px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.image
+{
+
+  height: 45px;
+  width: 45px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Arrange rows vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.logo-row {
+  display: flex;
+  justify-content: space-between; /* Spacing between items in a row */
+  width: 100%; /* Full width of parent container */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.logo-item {
+  flex: 1 1 auto; /* Allow items to grow, but not shrink */
+  max-width: calc(25% - 30px); /* Adjust width as needed */
+  padding: 10px;
+  text-align: center;
+}
+.SkilsTitle
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 75px;
+}
+.SkilsTitleII
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 175px;
+}
+.SkilsTitleIII
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 10%;
+  color: #333;
+  margin-top: 175px;
+  margin-left: 0%;
+}
+
+.projectListEdting
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+.ProjectCard
+{
+  margin-top:75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 455px;
+  margin-bottom: 25px;
+}
+.ProjectCardImage
+{
+  width: 300px;
+  height: 230px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.ProjectCardTextDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 0%;
+  width: 300px;
+}
+.ProjectCardName
+{
+  margin: 0%;
+  font-size: 24px;
+  font-weight: bold;
+}
+.ProjectCardFeature {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+}
+
+.ProjectCardFeatureDiv {
+  margin-top: 25px;
+  width: 252px;
+}
+
+
+.ContactmeDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 0%;
+}
+
+.InputField
+{
+
+  width: 250px;
+  height: 50px;
+  font-size: 24px;
+  color: black;
+  font-weight: 600;
+  border-radius: 16px;
+  border: solid 1px #555;
+  margin-bottom: 25px;
+  padding-left: 45px;
+}
+.InputField:focus
+{
+  outline: none;
+}
+.ContactmeSubmitButton {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  color: #00A8CC;
+  font-size: 34px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.ContactmeSubmitButton:hover {
+  background-color: #00A8CC;
+  color: black;
+}
+
+.ContactmeSubmitButton:active {
+  width: 302px;
+  height: 79px;
+}
+.FooterlogoparentDiv
+{
+  display: flex;
+  
+}
+.contactmeDIvParent
+{
+  height: 70%;
+}
+.FooterDiv
+{
+  width: 100%;
+  height:250px ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.FooterDivIcons
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  margin-right: 0%;
+}
+.FooterlogoparentDiv
+{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+}
