@@ -21,7 +21,7 @@ const HeroSection = () => {
   const navigate =useNavigate();
   const handleContactMe=()=>
   {
-    navigate("/contact me")
+    navigate("/contact")
   }
   return (
     <motion.div 
