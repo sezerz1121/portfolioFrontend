@@ -10,7 +10,7 @@ const ProjectsRender = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/project/projectall');
+                const response = await axios.get(`${import.meta.env.VITE_URL}/project/projectall`);
                 setProjects(response.data);
                 console.log(response.data);
             } catch (error) {
