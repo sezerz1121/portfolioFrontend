@@ -33,6 +33,24 @@ function Skills() {
       opacity: 1
     }
   }
+    const imageVariants = {
+    hover: {
+      scale: 1.25,
+      transition: {
+        type: 'spring',
+        stiffness: 500,
+        damping: 20
+      }
+    },
+    initial: {
+      scale: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 500,
+        damping: 20
+      }
+    }
+  };
   return (
     <>
     <div className='SkilsTitle'>Skills</div>
@@ -42,19 +60,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item} >
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/html.svg" alt="HTML Icon"/>
             <p>HTML</p>
@@ -64,19 +74,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/css.svg" alt="CSS Icon"/>
             <p>CSS</p>
@@ -86,19 +88,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/js.svg" alt="JavaScript Icon"/>
             <p>JavaScript</p>
@@ -108,19 +102,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/node.svg" alt="Node.js Icon"/>
             <p>Node.js</p>
@@ -133,19 +119,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/expressjs-icon.svg" alt="Express.js Icon"/>
             <p>Express.js</p>
@@ -155,19 +133,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/react.svg" alt="React.js Icon"/>
             <p>React.js</p>
@@ -177,19 +147,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/mongodb-icon-1.svg" alt="MongoDB Icon"/>
             <p>MongoDB</p>
@@ -199,19 +161,11 @@ function Skills() {
         <motion.div className="logo-item" variants={item}>
           <motion.div
             className='imageDiv'
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 10
-            }}
-            whileHover={{ scale: 1, rotate: 90 }}
-            whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%"
-             }}
+            whileHover="hover"
+            whileTap="tap"
+            initial="initial"
+            animate="initial"
+            variants={imageVariants}
           >
             <img className="image" src="/Images/git.svg" alt="Git Icon"/>
             <p>Git</p>
