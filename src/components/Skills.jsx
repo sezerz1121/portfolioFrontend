@@ -42,6 +42,14 @@ function Skills() {
         damping: 20
       }
     },
+    tap: {
+      scale: 1.25,
+      transition: {
+        type: 'spring',
+        stiffness: 500,
+        damping: 20
+      }
+    },
     initial: {
       scale: 1,
       transition: {
